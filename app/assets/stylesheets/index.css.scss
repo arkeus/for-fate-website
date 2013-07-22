@@ -26,17 +26,29 @@ body {
     position: absolute;
     left: 320px;
     opacity: 0.4;
+    -webkit-transition: all 4s ease-in-out;
+    -moz-transition: all 4s ease-in-out;
+    -o-transition: all 4s ease-in-out;
+    -ms-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
   }
   
   &:hover { 
     > #brand-gold {
       -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
       opacity: 0.8;
     }
     
     > #brand-black {
       -webkit-transform: rotateX(360deg);
+      -moz-transform: rotateX(360deg);
+      -ms-transform: rotateX(360deg);
+      -o-transform: rotateX(360deg);
+      transform: rotateX(360deg);
       opacity: 0.8;
     }
     
