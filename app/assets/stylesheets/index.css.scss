@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Telex);
+
+body {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#container {
+  margin: 150px auto;
+  width: 800px;
+  position: relative;
+  
+  #fate-text {
+    position: absolute;
+    width: 800px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Telex', sans-serif;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    transition: all 2s ease-in-out;
+
+  }
+  
+  .brand {
+    position: absolute;
+    left: 320px;
+    opacity: 0.4;
+    transition: all 4s ease-in-out;
+  }
+  
+  &:hover { 
+    > #brand-gold {
+      -webkit-transform: rotateY(360deg);
+      opacity: 0.8;
+    }
+    
+    > #brand-black {
+      -webkit-transform: rotateX(360deg);
+      opacity: 0.8;
+    }
+    
+    > #fate-text {
+      opacity: 0.4;
+    }
+  }
+}
